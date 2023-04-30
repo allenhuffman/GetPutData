@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <string.h> // for memset(), memcpy()
 
-#include "getPutValuesByOffset.h"
+#include "GetPutValuesByOffset.h"
 
 ValueUnion getValueFrom(uint8_t *bufferPtr, unsigned int offset, unsigned int size)
 {
