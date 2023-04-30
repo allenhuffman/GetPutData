@@ -28,6 +28,8 @@ uint32_t u32 = getU32From (buffer, 3);
 ```
 This method allows any data to be retrieved in any order, such as only getting a value at a later offset.
 
+Example: https://onlinegdb.com/YdCfV7MTm
+
 ## GetPutValues (by pointer)
 These routines are simpler to use if pulling our sequential values from the start of the buffer. The functions take the address of a pointer to the buffer, and will modify it (increment it) after any get or put by the number of bytes that were gotten or putten.
 
@@ -41,3 +43,5 @@ uint32_t u32 = getU32 (&ptr);
 You **can not** pass in just the address of the data, since these functions will modify (increment) the pointer that is passed in by reference (the address of the pointer).
 
 This method makes parsing data simpler since all you have to do is set a pointer to the start of the buffer and then make "get" calls pulling out data in the order it appears.
+
+Example: https://onlinegdb.com/IDhMiu9kd
