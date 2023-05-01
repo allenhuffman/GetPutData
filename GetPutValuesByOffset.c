@@ -68,3 +68,5 @@ void putDoubleTo (uint8_t *bufferPtr, unsigned int offset, double value)
 {
     memcpy (bufferPtr + offset, &value, sizeof(value));
 }
+
+// End of GetPutValuesByOffset.c

@@ -1,8 +1,13 @@
 // https://github.com/allenhuffman/GetPutData/
 
+/*---------------------------------------------------------------------------*/
+// Include Files
+/*---------------------------------------------------------------------------*/
 #include <stdint.h>
 
+/*---------------------------------------------------------------------------*/
 // Prototypes
+/*---------------------------------------------------------------------------*/
 void getData(uint8_t **ptr, void *dataPtr, unsigned int dataSize);
 uint8_t getU8(uint8_t **ptr);
 uint16_t getU16(uint8_t **ptr);
@@ -16,3 +21,5 @@ void putU16(uint8_t **ptr, uint16_t value);
 void putU32(uint8_t **ptr, uint32_t value);
 void putFloat(uint8_t **ptr, float value);
 void putDouble(uint8_t **ptr, double value);
+
+// End of GetPutValues.h

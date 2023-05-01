@@ -1,23 +1,22 @@
 // https://github.com/allenhuffman/GetPutData/
 
-/******************************************************************************
-
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
+/*---------------------------------------------------------------------------*/
+// Include Files
+/*---------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h> // for memset()
 
 #include "getPutValuesByOffset.h"
 
+/*---------------------------------------------------------------------------*/
 // Prototypes
+/*---------------------------------------------------------------------------*/
 void HexDump (char *text, uint8_t *ptr, unsigned int size);
 
+/*---------------------------------------------------------------------------*/
 // Functions
+/*---------------------------------------------------------------------------*/
 int main()
 {
     uint8_t     u8;
@@ -101,3 +100,4 @@ void HexDump (char *text, uint8_t *ptr, unsigned int size)
     printf ("\n");
 }
 
+// End of main.c

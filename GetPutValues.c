@@ -1,9 +1,16 @@
 // https://github.com/allenhuffman/GetPutData/
+
+/*---------------------------------------------------------------------------*/
+// Include Files
+/*---------------------------------------------------------------------------*/
 #include <stdint.h>
 #include <string.h> // for memset(), memcpy()
 
 #include "GetPutValues.h"
 
+/*---------------------------------------------------------------------------*/
+// Functions
+/*---------------------------------------------------------------------------*/
 void getData (uint8_t **ptr, void *dataPtr, unsigned int dataSize)
 {
     memcpy(dataPtr, *ptr, dataSize);
@@ -85,3 +92,5 @@ void putDouble (uint8_t **ptr, double value)
     memcpy (*ptr, &value, sizeof(value));
     *ptr += sizeof (value);
 }
+
+// End of GetPutValues.c

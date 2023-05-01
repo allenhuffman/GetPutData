@@ -1,30 +1,22 @@
 // https://github.com/allenhuffman/GetPutData/
 
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
+/*---------------------------------------------------------------------------*/
+// Include Files
+/*---------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h> // for memset()
 
 #include "GetPutValues.h"
 
-void HexDump (char *text, void *ptr, unsigned int size)
-{
-    printf ("%s: ", text);
-    for (unsigned int idx=0; idx<size; idx++)
-    {
-        printf ("%02x ", ((uint8_t*)ptr)[idx]);
-    }
-    printf ("\n");
-}
+/*---------------------------------------------------------------------------*/
+// Prototypes
+/*---------------------------------------------------------------------------*/
+void HexDump (char *text, uint8_t *ptr, unsigned int size);
 
-
+/*---------------------------------------------------------------------------*/
+// Functions
+/*---------------------------------------------------------------------------*/}
 int main()
 {
     uint8_t buffer[80]; // extra room.
@@ -66,3 +58,17 @@ int main()
     
     return 0;
 }
+
+
+// Utility Functions
+void HexDump (char *text, uint8_t *ptr, unsigned int size)
+{
+    printf ("%s: ", text);
+    for (int idx=0; idx<size; idx++)
+    {
+        printf ("%02x ", ((uint8_t*)ptr)[idx]);
+    }
+    printf ("\n");
+}
+
+// End of main2.c
