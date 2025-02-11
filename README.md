@@ -23,7 +23,7 @@ uint8_t data[] =
 You could read the 8-bit value at offset 0, the 16-bit value at offset 1, and the 32-bite value at offset 3, like this:
 ```
 uint8_t u8 = getU8From (buffer, 0);
-uint16_t u16 = getU8From (buffer, 1);
+uint16_t u16 = getU16From (buffer, 1);
 uint32_t u32 = getU32From (buffer, 3);
 ```
 This method allows any data to be retrieved in any order, such as only getting a value at a later offset.
@@ -37,7 +37,7 @@ Using the same example data above, the process is simpler (but more dangerous, s
 ```
 uint8_t *ptr = &buffer[0]; // ptr points to start of data.
 uint8_t u8 = getU8 (&ptr);
-uint16_t u16 = getU8 (&ptr);
+uint16_t u16 = getU16 (&ptr);
 uint32_t u32 = getU32 (&ptr);
 ```
 You **can not** pass in just the address of the data, since these functions will modify (increment) the pointer that is passed in by reference (the address of the pointer).
